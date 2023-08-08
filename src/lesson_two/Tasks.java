@@ -23,8 +23,8 @@ public class Tasks {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Какая температура за бортом?");
         int t;
-        if (scanner.hasNextInt()) {
-            t = scanner.nextInt();
+        if (scanner1.hasNextInt()) {
+            t = scanner1.nextInt();
             String s = t > -5 ? "Warm" : t > -20 ? "Normal" : "Cold";
             System.out.println(s);
         } else {
