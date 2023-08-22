@@ -15,19 +15,20 @@ public class CreditCard {
     }
 
     public long income(long sum) {
-        long result = this.balance + sum;
-        System.out.println("Текущий баланс: " + result);
-        return result;
+        this.balance += sum;
+        System.out.println("Текущий баланс: " + this.balance);
+        return this.balance;
     }
 
     public long outcome(long sum) {
-        long result = this.balance - sum;
-        System.out.println("Текущий баланс: " + result);
-        return result;
+        this.balance -= sum;
+        System.out.println("Текущий баланс: " + this.balance);
+        return this.balance;
     }
 
     public void info() {
         System.out.println("Номер счета: " + this.accountNumber);
         System.out.println("Текущий баланс: " + this.balance);
     }
+
 }
